@@ -12,7 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->loginButton, &QPushButton::clicked, this, &MainWindow::onLoginButtonClicked);
 
-    // Получаем доступ к PromoCodesWidget через stackedWidget
     PromoCodesWidget* promoCodesWidget = findChild<PromoCodesWidget*>("promoCodesWidget");
     if (promoCodesWidget) {
         connect(promoCodesWidget->findChild<QPushButton*>("openPromoCodeButton"), &QPushButton::clicked, promoCodesWidget, &PromoCodesWidget::openPromoCode);

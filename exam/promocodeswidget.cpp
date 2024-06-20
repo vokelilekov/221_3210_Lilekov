@@ -64,7 +64,7 @@ void PromoCodesWidget::addNewCard()
     promoCodes.append(newPromoCode);
 
     QPushButton *newCard = new QPushButton("???");
-    newCard->setFixedSize(100, 50); // Ширина в 2 раза больше высоты
-    ui->gridLayout->addWidget(newCard, cards.size() / 3, cards.size() % 3);
+    newCard->setFixedSize(100, 50);
+    ui->gridLayout->addWidget(newCard, cards.size() / 2, cards.size() % 2);
     cards.append(newCard);
 }

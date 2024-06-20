@@ -17,6 +17,9 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
       <widget class="QWidget" name="authPage">
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
@@ -41,7 +44,7 @@
       <widget class="QWidget" name="promoCodesPage">
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="PromoCodesWidget" name="promoCodesWidget"/>
+         <widget class="PromoCodesWidget" name="promoCodesWidget" native="true"/>
         </item>
        </layout>
       </widget>
@@ -55,12 +58,19 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PromoCodesWidget</class>
+   <extends>QWidget</extends>
+   <header>promocodeswidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

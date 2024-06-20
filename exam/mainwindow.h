@@ -20,7 +20,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString correctPin = "1234"; // Верный PIN-код
+    QString correctPin = "1234";
 };
 
-#endif // MAINWINDOW_H
+#endif
