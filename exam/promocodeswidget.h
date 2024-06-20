@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QVector>
-#include <QPushButton>
+#include <QLabel>
 #include <QGridLayout>
 
 namespace Ui {
@@ -18,14 +18,12 @@ public:
     explicit PromoCodesWidget(QWidget *parent = nullptr);
     ~PromoCodesWidget();
     void initializePromoCodes();
-
-public slots:
     void openPromoCode();
 
 private:
     Ui::PromoCodesWidget *ui;
     QVector<QString> promoCodes;
-    QVector<QPushButton*> cards;
+    QVector<QLabel*> cards;
 
     QString generateRandomPromoCode();
     void addNewCard();

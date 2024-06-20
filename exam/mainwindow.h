@@ -23,4 +23,4 @@ private:
     QString correctPin = "1234";
 };
 
-#endif
+#endif // MAINWINDOW_H
